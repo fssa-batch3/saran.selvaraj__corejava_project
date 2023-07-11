@@ -16,10 +16,10 @@ public class Logger {
 	
 	// Similarly write overloaded methods for error and info.
 	public static void main(String[] args) {
-		Logger l = new Logger();
-		l.debug("This is a Debug message");
-		l.info("This is an info message");
-		l.error("This is an error message");
+//		Logger l = new Logger();
+		Logger.debug("This is a Debug message");
+		Logger.info("This is an info message");
+		Logger.error("This is an error message");
 		
 	}
 }
