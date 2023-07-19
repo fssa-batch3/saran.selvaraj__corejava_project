@@ -2,6 +2,10 @@ package day07.Practices;
 import java.util.*;
 public class Task {
 
+	public Task(String string, int i, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String args[]) {
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(2);
