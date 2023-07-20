@@ -1,6 +1,6 @@
 package day05.Practices;
 
-class Account {
+public class Account {
     private String accNo;
     private double balance;
 
@@ -26,6 +26,7 @@ class Account {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+    
 }
 
 // Interface
@@ -38,7 +39,7 @@ public interface ATM {
 // Implementation
 class AxisATM implements ATM {
     private static final double WITHDRAWAL_CHARGE = 5;
-
+    
     @Override
     public boolean deposit(Account account, double amount) {
         account.setBalance(account.getBalance() + amount);
