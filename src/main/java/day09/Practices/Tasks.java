@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Tasks {
+public class Tasks {
 	private int id;
 	private String name;
     private LocalDate deadline;
@@ -56,7 +56,7 @@ class Tasks {
     	Tasks t1 = new Tasks(3,"Coding",LocalDate.of(2022,10,22));
     	Tasks t2 = new Tasks(5,"Product Design",LocalDate.of(2022,10,01));
     	Tasks t3 = new Tasks(1,"Software Design",LocalDate.of(2022,10,07));
-    	Tasks t4 = new Tasks(3,"Coding",LocalDate.of(2022,10,22));
+    	Tasks t4 = new Tasks(3,"Coding1",LocalDate.of(2022,10,10));
     	
     	arr.add(t1);
     	arr.add(t2);
