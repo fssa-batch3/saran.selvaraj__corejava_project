@@ -3,17 +3,14 @@ package day08.Practices;
 import java.util.*;
 public class SeparateUsingDeptNameAndTheirEmployees {
 
-	 /**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
 	        HashMap<String, List<String>> departmentEmployeesMap = new HashMap<>();
 	        
-	        System.out.println("Enter the DeptName, EmployeeName pairs (comma-separated):");
+	        System.out.println("Enter the DeptName, EmployeeName pairs (Space-separated):");
 	        	String input = scanner.nextLine();	
 
-	        String[] pairs = input.split(", ");
+	        String[] pairs = input.split(" ");
 
 	        for (String pair : pairs) {
 	            String[] parts = pair.split(",");

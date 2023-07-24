@@ -1,6 +1,6 @@
 package day05.Practices;
 
-class Department {
+public class Department {
     String deptName;
     int deptId;
 

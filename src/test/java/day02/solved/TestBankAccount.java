@@ -1,11 +1,12 @@
 package day02.solved;
+import day02.Solved.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
 /**
- * @author Vinit Gore
+ * @author Mohammed Ajmal
  *
  **/
 public class TestBankAccount {
