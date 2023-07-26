@@ -18,12 +18,12 @@ public class DAOException extends Exception {
     }
 }
 
- public static class TaskDAO {
+ public class Task {
     public String url = "jdbc:mysql://localhost/project";
     public String username = "root";
     public String password = "123456";
 
-    public static void createTask(TaskDAO taskDAO) throws DAOException {
+    public  void createTask(TaskDAO taskDAO) throws DAOException {
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
             String insertQuery = "INSERT INTO task (id, name, status) VALUES (?, ?, ?)";
             try (PreparedStatement pstmt = conn.prepareStatement(insertQuery)) {
@@ -37,7 +37,7 @@ public class DAOException extends Exception {
         }
     }
 
-    public void updateTask(TaskDAO taskDAO) throws DAOException {
+    public  void updateTask(TaskDAO taskDAO) throws DAOException {
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
             String updateQuery = "UPDATE task SET name = ?, status = ? WHERE id = ?";
             try (PreparedStatement pstmt = conn.prepareStatement(updateQuery)) {
@@ -63,7 +63,7 @@ public class DAOException extends Exception {
         }
     }
 
-    public List<TaskDAO> getAllTasks() throws DAOException {
+    public  List<TaskDAO> getAllTasks() throws DAOException {
         List<TaskDAO> taskDAOs = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
             String selectQuery = "SELECT id, name, status FROM task";
