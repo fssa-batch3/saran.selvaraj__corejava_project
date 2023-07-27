@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 
 
-class Search {
+public class Search {
     private int id;
     private String name;
     private LocalDate deadline;

@@ -1,24 +1,30 @@
 package day09.Practices;
 import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 public class SortAListOfIntegers {
+    private ArrayList<Integer> arr;
 
-      public static void main(String args[]) {
-    	  
-    		Scanner scan = new Scanner(System.in);
-    		ArrayList<Integer> arr = new ArrayList<Integer>(); 
-    		
-    	    System.out.print("Enter integers with space separated");
-    	    
-    		for(int i = 0 ; i < 5; i ++) {
-    			arr.add(scan.nextInt());
-    		}
-    		Collections.sort(arr);
-    		for(int i = 0 ; i < 5; i ++) {
-    			System.out.print( arr.get(i) + " " );
-    		}
-    		
-      }
+    public SortAListOfIntegers() {
+        arr = new ArrayList<>();
+    }
 
-  
+    public ArrayList<Integer> getArr() {
+        return arr;
+    }
 
+    public void setArr(ArrayList<Integer> arr) {
+        this.arr = arr;
+    }
+
+    public void addInteger(int num) {
+        arr.add(num);
+    }
+
+    public void sortIntegers() {
+        Collections.sort(arr);
+    }
 }
